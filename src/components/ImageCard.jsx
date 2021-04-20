@@ -5,7 +5,9 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import { Collapse } from '@material-ui/core';
+import { Button, Collapse } from '@material-ui/core';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -15,6 +17,14 @@ const useStyles = makeStyles({
   },
   media: {
     height: 340,
+    WebkitFilter: 'grayscale(100%) blur(1px)',
+    filter: 'grayscale(100%) blur(1px)',
+    WebkitTransition: '.3s ease-in-out',
+    transition: '.3s ease-in-out',
+    '&:hover': {
+      WebKitFilter: 'grayscale(0)',
+      filter: 'grayscale(0)'
+    },
   },
   title: {
     fontFamily: 'Nunito',
@@ -22,14 +32,20 @@ const useStyles = makeStyles({
     fontSize: '2rem',
     color: '#fff',
   },
-  desc: {
+  description: {
     fontFamily: 'Nunito',
     fontSize: '1.1rem',
     color: '#ddd',
+    display: 'inline-block'
+  },
+  button: {
+    margin: '10px',
+    background: '#000',
+    color: '#fff'
   },
 });
 
-export default function ImageCard({ page, checked }) {
+export default function ImageCard({ page, checked, icon }) {
   const classes = useStyles();
 
   return (
@@ -53,11 +69,18 @@ export default function ImageCard({ page, checked }) {
             variant="body2"
             color="textSecondary"
             component="p"
-            className={classes.desc}
+            className={classes.description}
           >
             {page.description}
           </Typography>
         </CardContent>
+        <Button 
+          variant="outlined" 
+          className={classes.button}  
+            startIcon={icon}
+          >
+            {page.buttonTitle}
+        </Button>
       </Card>
     </Collapse>
   );

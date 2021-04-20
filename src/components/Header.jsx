@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme)=> ({
     fontSize: "2rem",
   },
   appbarTitle: {
-    flexGrow: "1",
+    flexGrow: '1',
+
   },
   appbarWrapper: {
     width: '80%',
@@ -52,7 +53,7 @@ const Header = () => {
     <div className={classes.root} id="header">
         <AppBar className={classes.appbar} elevation={0}>
           <Toolbar className={classes.appbarWrapper}>
-          <h1 className={classes.appbarTitle}>SoftDevs</h1>
+          <h1 className={classes.appbarTitle} data-text="glitched">SoftDevs</h1>
           <IconButton>
             <AllInclusiveIcon className={classes.icon}/>
           </IconButton>
