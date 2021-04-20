@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-export default function () {
+export default function PagesToVisit() {
   const classes = useStyles();
   const checked = useWindowPosition('header');
   return (
