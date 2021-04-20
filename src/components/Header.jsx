@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, IconButton, Toolbar,  Collapse} from "@material-ui/core";
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive'; //Infinite icon
-import SortIcon from '@material-ui/icons/Sort'; //Sort icon
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 
