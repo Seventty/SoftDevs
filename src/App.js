@@ -9,7 +9,7 @@ import './App.css';
 const useStyles = makeStyles((theme)=> ({
   root: {
     minHeight: '100vh',
-    backgroundImage:`url(${process.env.PUBLIC_URL + '/assets/bg1.png'})`,
+    backgroundImage:`url(${process.env.PUBLIC_URL + '/assets/Img1.jpeg'})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: '5% 50%',
@@ -32,5 +32,5 @@ export default function App() {
       
     </div>
   )
-
 }
+

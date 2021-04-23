@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   exploreIcon: {
-    color: '#fff',
-    fontSize: '3em'
+    color: '#000',
+    fontSize: '3em',
   }
 }));
 export default function PagesToVisit() {
@@ -34,3 +34,6 @@ export default function PagesToVisit() {
     </div>
   );
 }
+
+console.log(`Hellow world`);
+

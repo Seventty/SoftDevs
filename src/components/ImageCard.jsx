@@ -14,17 +14,17 @@ const useStyles = makeStyles({
     maxWidth: 545,
     background: 'rgba(0,0,0,0.5)',
     margin: '20px',
-  },
-  media: {
-    height: 340,
-    WebkitFilter: 'grayscale(100%) blur(1px)',
-    filter: 'grayscale(100%) blur(1px)',
+    WebkitFilter: 'grayscale(100%)',
+    filter: 'grayscale(100%)',
     WebkitTransition: '.3s ease-in-out',
     transition: '.3s ease-in-out',
     '&:hover': {
       WebKitFilter: 'grayscale(0)',
       filter: 'grayscale(0)'
     },
+  },
+  media: {
+    height: 340,
   },
   title: {
     fontFamily: 'Nunito',
@@ -76,8 +76,9 @@ export default function ImageCard({ page, checked, icon }) {
         </CardContent>
         <Button 
           variant="outlined" 
-          className={classes.button}  
-            startIcon={icon}
+          className={classes.button}
+          href={page.href}
+          startIcon={icon}
           >
             {page.buttonTitle}
         </Button>
@@ -85,3 +86,4 @@ export default function ImageCard({ page, checked, icon }) {
     </Collapse>
   );
 }
+
