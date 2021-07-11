@@ -11,7 +11,7 @@ const pages = [
     },
     {
         title: 'SoftDevs Shop',
-        description: "All the equipment you will need to become the most powerful developer of all time. Buy something in our store to develop with more power.",
+        description: "Todo el equipo que necestirarás para ser el programador más poderoso de todos los tiempos. Compra algo de nuestra tienda para que aumentes el poder en tus lineas de código.",
         imageUrl: process.env.PUBLIC_URL + '/assets/SDShopBanner.png',
         direction: 'right',
         buttonTitle: 'Go Shop',
