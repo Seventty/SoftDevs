@@ -1,12 +1,12 @@
 const pages = [
     {
-        title: 'SoftDevs Home',
-        description: "Welcome to SoftDevs, a community in which you enter and automatically become part of the collective intelligence that will defeat artificial intelligences. Taaaake a coffee and come to program with us. ",
-        imageUrl: process.env.PUBLIC_URL + '/assets/ComingSoonBanner.png',
+        title: 'ColorsOfCode Collection',
+        description: "Galería de arte de los productos de marca de SoftDevs, acá podrán ver los diseños desplegados y a desplegar.",
+        imageUrl: process.env.PUBLIC_URL + '/assets/ColorsOfCode.png',
         direction: 'left',
-        buttonTitle: 'Go Home',
+        buttonTitle: 'Go galery',
         startIcon: "HomeIcon",
-        href: "",
+        href: "http://colorsofcodecollection.netlify.app",
         time: 1500,
     },
     {
