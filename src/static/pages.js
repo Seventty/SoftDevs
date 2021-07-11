@@ -2,7 +2,7 @@ const pages = [
     {
         title: 'ColorsOfCode Collection',
         description: "Galería de arte de los productos de marca de SoftDevs. Acá podrán ver los diseños desplegados y a desplegar.",
-        imageUrl: process.env.PUBLIC_URL + '/assets/ColorsOfCode.png',
+        imageUrl: 'https://i.ibb.co/T1cVVj3/COC.png',
         direction: 'left',
         buttonTitle: 'Go galery',
         startIcon: "HomeIcon",
